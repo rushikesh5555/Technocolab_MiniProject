@@ -16,17 +16,16 @@ Irrelevant and redundant columns were deleted as they do not directly contribute
 - Calculated the new column "active_days" by taking the difference between the closed date and the founded date of the startup.
 
 - Subsequently, we addressed missing values in crucial columns such as 'status', 'country_code', 'category_code', and 'founded_at'.
-
-- Outliers in 'milestones', 'funding_rounds', 'funding_total_usd', and 'active_days' were identified and removed using the IQR method.
-
-- Transformed data columns ('founded_at', 'closed_at', 'first_funded_at', 'last_funding_at', 'first_milestone_at', 'last_milestone_at') into years and created a new variable, 'isClosed,' from 'closed_at' and 'status' columns.
-
+  
 - Finally, missing values were imputed using mean, median, and mode.
 
+#### Dealing with Outliers
+- Outliers in the dataset, particularly in the 'active_days' and 'founded_at' columns, were addressed through the Interquartile Range (IQR) method. This step ensured a more robust analysis by removing extreme values.
+- 
 #### Dealing with categorical features
 Due to more than 30 unique categories in the 'category_code' and 'country_code' columns, using all categories could unnecessarily impact model performance.   <br>
-hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' class.
-
+hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' class.  <br>
+Transformed data columns ('founded_at', 'closed_at', 'first_funded_at', 'last_funding_at', 'first_milestone_at', 'last_milestone_at') into years and created a new variable, 'isClosed,' from 'closed_at' and 'status' columns.  <br>
 ## Feature Engineering
 
 Applied the **Label Encoding** on the target column which is Status.  <br>
