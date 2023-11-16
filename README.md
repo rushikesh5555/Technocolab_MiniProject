@@ -1,8 +1,8 @@
 ## Data Preprocessing
 
-#### Removing Unnecessary Features
+#### Removing Unnecessary Features:
 
-Irrelevant and redundant columns were deleted as they do not directly contribute to predicting acquisition status.  <br>
+Irrelevant and redundant columns were deleted as they do not directly contribute to predict acquisition status.  <br>
 
 - Deleted redundant features: 'id', 'Unnamed: 0.1', 'entity_type', 'entity_id', 'parent_id', 'created_by', 'created_at', 'updated_at'.
 
@@ -15,7 +15,7 @@ Irrelevant and redundant columns were deleted as they do not directly contribute
 
 - Calculated the new column "active_days" by taking the difference between the closed date and the founded date of the startup.
 
-- Subsequently, we addressed missing values in crucial columns such as 'status', 'country_code', 'category_code' and 'founded_at'.
+- Subsequently, we addressed missing values in crucial columns such as 'status', 'country_code', 'category_code', and 'founded_at'.
 
 - Outliers in 'milestones', 'funding_rounds', 'funding_total_usd', and 'active_days' were identified and removed using the IQR method.
 
@@ -23,9 +23,9 @@ Irrelevant and redundant columns were deleted as they do not directly contribute
 
 - Finally, missing values were imputed using mean, median, and mode.
 
-#### dealing with categorical features
+#### Dealing with categorical features
 Due to more than 30 unique categories in the 'category_code' and 'country_code' columns, using all categories could unnecessarily impact model performance.   <br>
-hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' classes.
+hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' class.
 
 ## Feature Engineering
 
