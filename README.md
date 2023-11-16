@@ -41,8 +41,7 @@ Irrelevant and redundant columns were deleted as they do not directly contribute
 - Outliers in the dataset, particularly in the 'active_days' and 'founded_at' columns, were addressed through the Interquartile Range (IQR) method. This step ensured a more robust analysis by removing extreme values.
 
 #### Dealing with categorical features
-Due to more than 30 unique categories in the 'category_code' and 'country_code' columns, using all categories could unnecessarily impact model performance.   <br>
-hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' class.  <br>
+Due to more than 30 unique categories in the 'category_code' and 'country_code' columns, using all categories could unnecessarily impact model performance. hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' class.  <br>
 Transformed data columns ('founded_at', 'closed_at', 'first_funded_at', 'last_funding_at', 'first_milestone_at', 'last_milestone_at') into years and created a new variable, 'isClosed,' from 'closed_at' and 'status' columns.  <br>
 ## Feature Engineering
 
