@@ -65,45 +65,45 @@ Accuracy, Precision, sensitivity, specificity
 
 ### Bivariate Model
 
--The 'status' column is selected as the target column, and the expected statuses are 'Operating' and 'Closed'.
--Feature selection on the training data is done using the SelectKBest method from scikit-learn.We selected 5 features namely 'founded_at',
+- The 'status' column is selected as the target column, and the expected statuses are 'Operating' and 'Closed'.
+- Feature selection on the training data is done using the SelectKBest method from scikit-learn.We selected 5 features namely 'founded_at',
  'ROI','active_days','Age_group_2500-4000'and'Age_group_4000-5500'
 
 #### Regularised Logistic Regression
 
--Regularized Logistic Regression (RLR) was chosen as a modeling algorithm due to its effectiveness in binary classification tasks.
--The model underwent hyperparameter tuning using techniques like GridSearchCV, ensuring optimal performance by fine-tuning parameters such as penalty, solver, and regularization strength (C).
--Generated ROC curves to assess the performance of model. The resulting AUC was found to be 92%.
--Derived the threshold probability as 0.9 from the overlaping criteria of accuracy, sensitivity and specificity.
--Achieving a remarkable 98% precision, 79% accuracy, 77% sensitivity on the testing dataset.
+- Regularized Logistic Regression (RLR) was chosen as a modeling algorithm due to its effectiveness in binary classification tasks.
+- The model underwent hyperparameter tuning using techniques like GridSearchCV, ensuring optimal performance by fine-tuning parameters such as penalty, solver, and regularization strength (C).
+- Generated ROC curves to assess the performance of model. The resulting AUC was found to be 92%.
+- Derived the threshold probability as 0.9 from the overlaping criteria of accuracy, sensitivity and specificity.
+- Achieving a remarkable 98% precision, 79% accuracy, 77% sensitivity on the testing dataset.
 
 #### Random Forest Classifier
 
--The Random Forest algorithm was employed for its ability to handle complex relationships and feature interactions
--The Random Forest model underwent extensive hyperparameter tuning using GridSearchCV, optimizing parameters like the number of trees,  maximum depth, and minimum samples split to enhance predictive accuracy.
--Performance metrics, including accuracy, precision, recall, and specificity, were thoroughly evaluated on both training and testing datasets.
--The Random Forest model demonstrated robustness, achieving 96% accuracy on training and 95% on testing datasets. 
+- The Random Forest algorithm was employed for its ability to handle complex relationships and feature interactions
+- The Random Forest model underwent extensive hyperparameter tuning using GridSearchCV, optimizing parameters like the number of trees,  maximum depth, and minimum samples split to enhance predictive accuracy.
+- Performance metrics, including accuracy, precision, recall, and specificity, were thoroughly evaluated on both training and testing datasets.
+- The Random Forest model demonstrated robustness, achieving 96% accuracy on training and 95% on testing datasets. 
 
 ### Multivariate Model
 
--For multivariate model we are taking KNN and XGBoost classification Algorithms.
--Used whole dataset to train the models, the 'status' column is selected as the target column, and the expected statuses are 'Operating', 'Closed', 'Acquired', 'IPO'.
--Feature selection on the training data is done using the SelectKBest method from scikit-learn.We selected 10 features namely 'founded_at',
+- For multivariate model we are taking KNN and XGBoost classification Algorithms.
+- Used whole dataset to train the models, the 'status' column is selected as the target column, and the expected statuses are 'Operating', 'Closed', 'Acquired', 'IPO'.
+- Feature selection on the training data is done using the SelectKBest method from scikit-learn.We selected 10 features namely 'founded_at',
 'funding_total_usd','ROI','active_days','category_code_mobile','country_code_IRL','funding_usd_for_1_round','Age_group_2500-4000','Age_group_5500-7000'and'Age_group_7000-10000'
  
 #### K-Nearest Neighbors 
  
--Employed the K-Nearest Neighbors (KNN) algorithm for its simplicity and effectiveness in multiclass classification scenarios.
--Utilized GridSearchCV to fine-tune the model's hyperparameters, optimizing key parameters like the number of neighbors, distance metric, and weighting scheme. The best configuration was found to have 6 neighbors, using the Manhattan distance metric and uniform weighting.
--Achieved a training accuracy of 80%, with a precision of 53% and recall of 42%. The model exhibited a mean absolute error of 0.3 and a root mean squared error of 0.72, showcasing its ability to capture patterns in the training dataset.
--On the testing dataset, the model demonstrated a test accuracy of 75%, with a precision of 39% and recall of 39%. The mean absolute error was 0.38, and the root mean squared error was 0.8, indicating reasonable generalization to new, unseen data.
+- Employed the K-Nearest Neighbors (KNN) algorithm for its simplicity and effectiveness in multiclass classification scenarios.
+- Utilized GridSearchCV to fine-tune the model's hyperparameters, optimizing key parameters like the number of neighbors, distance metric, and weighting scheme. The best configuration was found to have 6 neighbors, using the Manhattan distance metric and uniform weighting.
+- Achieved a training accuracy of 80%, with a precision of 53% and recall of 42%. The model exhibited a mean absolute error of 0.3 and a root mean squared error of 0.72, showcasing its ability to capture patterns in the training dataset.
+- On the testing dataset, the model demonstrated a test accuracy of 75%, with a precision of 39% and recall of 39%. The mean absolute error was 0.38, and the root mean squared error was 0.8, indicating reasonable generalization to new, unseen data.
  
 #### XGBoost Multiclass Classification
  
--Conducted a hyperparameter search for XGBoost, fine-tuning critical parameters like learning rate, number of trees, and tree depth, resulting in an optimized configuration.
--Achieved a peak accuracy of 91.5% on the training dataset using the best set of hyperparameters, ensuring robust performance during model training.
--Evaluated the XGBoost model on the training dataset, showcasing strong metrics with 92% accuracy, 72% precision, and 55% recall, demonstrating its effectiveness in multiclass classification.
--Demonstrated the model's ability to generalize on unseen data, maintaining a high accuracy of 89% on the testing dataset, with balanced precision and recall metrics.
+- Conducted a hyperparameter search for XGBoost, fine-tuning critical parameters like learning rate, number of trees, and tree depth, resulting in an optimized configuration.
+- Achieved a peak accuracy of 91.5% on the training dataset using the best set of hyperparameters, ensuring robust performance during model training.
+- Evaluated the XGBoost model on the training dataset, showcasing strong metrics with 92% accuracy, 72% precision, and 55% recall, demonstrating its effectiveness in multiclass classification.
+- Demonstrated the model's ability to generalize on unseen data, maintaining a high accuracy of 89% on the testing dataset, with balanced precision and recall metrics.
 
 ### Pipeline Construction
 
