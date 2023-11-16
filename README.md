@@ -1,7 +1,7 @@
 ## Feature Engineering
 
 Applied the **Label Encoding** on the target column which is Status.
-For the bivariate model status column is labeled as  <be>
+For the bivariate model status column is labeled as  <br>
 Closed and acquired: 0<be>
 Operating and ipo: 1<be>
 
