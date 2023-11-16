@@ -1,15 +1,15 @@
 ## Feature Engineering
 
-Applied the **Label Encoding** on the target column which is Status.
+Applied the **Label Encoding** on the target column which is Status.  <br>
 For the bivariate model status column is labeled as  <br>
 Closed and acquired: 0  <br>
 Operating and ipo: 1  <br>
 
-For the multivariate model status column is labeled as 
-Closed: 0<be>
-Operating: 1<be>
-Ipo: 2<be>
-Acquired: 3<be>
+For the multivariate model status column is labeled as   <br>
+Closed: 0  <br>
+Operating: 1  <br>
+Ipo: 2  <br>
+Acquired: 3  <br>
 
 #### Creating new features
 1. **Funding_usd_for_1_round**: Calculated by dividing funding_total_usd by total_funding_rounds, providing an insight into the average contribution of each funding round to the company.
