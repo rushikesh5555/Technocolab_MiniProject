@@ -20,12 +20,11 @@ Acquired: 3  <br>
 4. **Age_bucket**: Created and populated the "Age_bucket" column in the DataFrame, allowing for a categorical representation of the "active_days" variable.
 
 ### Scaling
-**MinMax scaling** is used to transform the numerical data in a certain range, especially between 0 and 1.
+**MinMax scaling** is used to transform the numerical data in a certain range, especially between 0 and 1.  <br>
 
 ### Feature Selection
-Feature Selection is applied to reduce the input variable to our model by using only relevant data and getting rid of noise in data.
+Feature Selection is applied to reduce the input variable to our model by using only relevant data and getting rid of noise in data.  <br>
 Employed the **mutual information score** criteria to identify and select the most relevant k features. This ensures a focused and efficient representation of the data for our model.
-
 
 ## Exploratory Data Analysis (EDA)
 
@@ -35,7 +34,7 @@ During the analysis, we observed that certain features played a crucial role in 
 #### Status Distribution
 ![Status Distribution](D:\Mohamed Sheriff\Projects\Technocolabs Machine Learning Internship\Startup-Acquisition-Using-Crunchbase\Imgs/Status Distribution.png)
 
-The distribution of startup statuses revealed that operating and IPO startups dominate the dataset, with 1051 closed startups. This distribution is essential for understanding the balance of classes in our analysis.
+The distribution of startup statuses revealed that operating and IPO startups dominate the dataset, with 1051 closed startups. This distribution is essential for understanding the balance of classes in our analysis.  <br>
 
 #### Age and Funding Trends
 ![Age Bucket vs. Status](D:\Mohamed Sheriff\Projects\Technocolabs Machine Learning Internship\Startup-Acquisition-Using-Crunchbase\Imgs/Age Bucket vs Status.png)
@@ -112,7 +111,8 @@ Accuracy, Precision, sensitivity, specificity
 
 ## Deployment Stage
 
-This application is designed to predict the acquisition status of startup companies based on selected input parameters. It utilizes Streamlit to create an interactive interface allowing users to input various parameters, view feature-engineered data, and obtain predictions through two pipelines: one for binary classification and another for multi-class classification.
+This application is designed to predict the acquisition status of startup companies based on selected input parameters.  <br>
+It utilizes Streamlit to create an interactive interface allowing users to input various parameters, view feature-engineered data, and obtain predictions through two pipelines: one for binary classification and another for multi-class classification.
 
 ### Features
 
