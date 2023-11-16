@@ -2,13 +2,19 @@
 
 Applied the **Label Encoding** on the target column which is Status.
 For the bivariate model status column is labeled as 
+
 Closed and acquired: 0
+
 Operating and ipo: 1
 
 For the multivariate model status column is labeled as 
+
 Closed: 0
+
 Operating: 1
+
 Ipo: 2
+
 Acquired: 3
 
 
