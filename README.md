@@ -1,22 +1,15 @@
 ## Feature Engineering
 
 Applied the **Label Encoding** on the target column which is Status.
-For the bivariate model status column is labeled as 
-
-Closed and acquired: 0
-
-Operating and ipo: 1
+For the bivariate model status column is labeled as<be>
+Closed and acquired: 0<be>
+Operating and ipo: 1<be>
 
 For the multivariate model status column is labeled as 
-
-Closed: 0
-
-Operating: 1
-
-Ipo: 2
-
-Acquired: 3
-
+Closed: 0<be>
+Operating: 1<be>
+Ipo: 2<be>
+Acquired: 3<be>
 
 #### Creating new features
 1. **Funding_usd_for_1_round**: Calculated by dividing funding_total_usd by total_funding_rounds, providing an insight into the average contribution of each funding round to the company.
@@ -26,10 +19,10 @@ Acquired: 3
 
 4. **Age_bucket**: Created and populated the "Age_bucket" column in the DataFrame, allowing for a categorical representation of the "active_days" variable.
 
-#### Scaling
+### Scaling
 **MinMax scaling** is used to transform the numerical data in a certain range, especially between 0 and 1.
 
-#### Feature Selection
+### Feature Selection
 Feature Selection is applied to reduce the input variable to our model by using only relevant data and getting rid of noise in data.
 Employed the **mutual information score** criteria to identify and select the most relevant k features. This ensures a focused and efficient representation of the data for our model.
 
