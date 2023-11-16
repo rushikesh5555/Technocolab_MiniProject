@@ -58,10 +58,10 @@ The EDA phase provided valuable insights into the startup dataset. Key findings 
 #### Metrics considered for Model Evaluation:
 Accuracy, Precision, sensitivity, specificity
 
--Accuracy: It is the ratio of overall correctly predicted instances to the total number of instances in the dataset.
--Precision: precision is the measure which represents the correctly predicted positive classes from the total predicted positive classes.
--Sensitivity: sensitivity represents the correctly predicted positive class from the total number of actual positive instances.
--Specificity: specificity represents the correctly predicted Negative class from the total number of actual negative instances.
+- Accuracy: It is the ratio of overall correctly predicted instances to the total number of instances in the dataset.
+- Precision: precision is the measure which represents the correctly predicted positive classes from the total predicted positive classes.
+- Sensitivity: sensitivity represents the correctly predicted positive class from the total number of actual positive instances.
+- Specificity: specificity represents the correctly predicted Negative class from the total number of actual negative instances.
 
 ### Bivariate Model
 
