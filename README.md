@@ -78,12 +78,14 @@ Employed the **mutual information score** criteria to identify and select the mo
 During the analysis, we observed that certain features played a crucial role in determining the status of startups. Notably, the age of startups, funding trends, and category codes proved significant in understanding the dataset.
 
 #### Status Distribution
-![Status Distribution](D:\Mohamed Sheriff\Projects\Technocolabs Machine Learning Internship\Startup-Acquisition-Using-Crunchbase\Imgs/Status Distribution.png)
+![Status Distribution](https://github.com/rushikesh5555/Technocolab_MiniProject/assets/83490548/8072ba88-c03b-4466-83ae-b1bc59092d36)
+
 
 The distribution of startup statuses revealed that operating and IPO startups dominate the dataset, with 1051 closed startups. This distribution is essential for understanding the balance of classes in our analysis.  <br>
 
 #### Age and Funding Trends
-![Age Bucket vs. Status](D:\Mohamed Sheriff\Projects\Technocolabs Machine Learning Internship\Startup-Acquisition-Using-Crunchbase\Imgs/Age Bucket vs Status.png)
+![Age Bucket vs Status](https://github.com/rushikesh5555/Technocolab_MiniProject/assets/83490548/8e3643a1-96d0-47c6-9241-5c66b8a2ca44)
+
 
 Startups with an age range above 2500 days demonstrated a higher probability of being in operation. Additionally, funding trends were explored across different age groups, providing insights into the dynamics of startup funding over time.
 
