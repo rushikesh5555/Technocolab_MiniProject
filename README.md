@@ -1,3 +1,20 @@
+# Topic: Predicting Startups Acquisition Status
+The goal of this project is to predict a former startup’s acquisition status based on a company’s financial statistics.
+
+### Objective:
+The objective of the project is to predict whether a startup which will be Operating, IPO, Acquired or closed. This problem will be solved through a Supervised Machine Learning approach by training a model based on the history of startups that were either acquired or closed.
+
+### Link to data:
+ 
+  https://drive.google.com/file/d/1tWYkHYHm2HoiCajZ49Cs1K7sklWTdAbV/view?usp=sharing
+       
+### Summary:
+
+The data contains industry trends, investment insights, and individual company information. Since the data was acquired on a trial basis, it only contains information about companies known. After training the model, we predict whether startups still operating, IPO, acquired, or closed.
+ 
+### Dataset Overview
+The dataset provides insights into various aspects of startups, including categories, status, founding date, country code, investment details, milestones, and more.
+
 ## Data Preprocessing
 
 #### Removing Unnecessary Features:
