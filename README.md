@@ -1,11 +1,40 @@
+## Data Preprocessing
+
+#### Removing Unnecessary Features
+
+Irrelevant and redundant columns were deleted as they do not directly contribute to predicting acquisition status.  <br>
+
+- Deleted redundant features: 'id', 'Unnamed: 0.1', 'entity_type', 'entity_id', 'parent_id', 'created_by', 'created_at', 'updated_at'.
+
+- Deleted irrelevant features: 'domain', 'homepage_url', 'twitter_username', 'logo_url', 'logo_width', 'logo_height', 'short_description', 'description', 'overview', 'tag_list', 'name', 'normalized_name', 'permalink', 'invested_companies'.
+
+#### Dealing with Missing Values:
+- The ROI column exhibits 99% missing values. Since it is the only financial column and its removal might impact predictions, we imputed the missing ROI values using the median.
+
+- Several columns contain a high percentage of missing values. Features exceeding a 98% missing value threshold were dropped.
+
+- Calculated the new column "active_days" by taking the difference between the closed date and the founded date of the startup.
+
+- Subsequently, we addressed missing values in crucial columns such as 'status', 'country_code', 'category_code' and 'founded_at'.
+
+- Outliers in 'milestones', 'funding_rounds', 'funding_total_usd', and 'active_days' were identified and removed using the IQR method.
+
+- Transformed data columns ('founded_at', 'closed_at', 'first_funded_at', 'last_funding_at', 'first_milestone_at', 'last_milestone_at') into years and created a new variable, 'isClosed,' from 'closed_at' and 'status' columns.
+
+- Finally, missing values were imputed using mean, median, and mode.
+
+#### dealing with categorical features
+Due to more than 30 unique categories in the 'category_code' and 'country_code' columns, using all categories could unnecessarily impact model performance.   <br>
+hence, kept the first 10 highly frequent categories as it is and labeled the remaining categories as 'other' classes.
+
 ## Feature Engineering
 
 Applied the **Label Encoding** on the target column which is Status.  <br>
-For the bivariate model status column is labeled as  <br>
+For the bivariate model, the status column is labeled as  <br>
 Closed and acquired: 0  <br>
-Operating and ipo: 1  <br>
+Operating and IPO: 1  <br>
 
-For the multivariate model status column is labeled as   <br>
+For the multivariate model, the status column is labeled as   <br>
 Closed: 0  <br>
 Operating: 1  <br>
 Ipo: 2  <br>
