@@ -29,6 +29,7 @@ Irrelevant and redundant columns were deleted as they do not directly contribute
 - The ROI column exhibits 99% missing values. Since it is the only financial column and its removal might impact predictions, we imputed the missing ROI values using the median.
 
 - Several columns contain a high percentage of missing values. Features exceeding a 98% missing value threshold were dropped.
+![image](https://github.com/rushikesh5555/Technocolab_MiniProject/assets/83490548/5260e786-eb17-42d0-bf6f-0ce05978cbe4)
 
 - Calculated the new column "active_days" by taking the difference between the closed date and the founded date of the startup.
 
