@@ -8,7 +8,7 @@ Irrelevant and redundant columns were deleted as they do not directly contribute
 
 - Deleted irrelevant features: 'domain', 'homepage_url', 'twitter_username', 'logo_url', 'logo_width', 'logo_height', 'short_description', 'description', 'overview', 'tag_list', 'name', 'normalized_name', 'permalink', 'invested_companies'.
 
-#### Dealing with Missing Values:
+#### Dealing with Missing Values
 - The ROI column exhibits 99% missing values. Since it is the only financial column and its removal might impact predictions, we imputed the missing ROI values using the median.
 
 - Several columns contain a high percentage of missing values. Features exceeding a 98% missing value threshold were dropped.
